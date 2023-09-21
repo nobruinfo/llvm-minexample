@@ -30,7 +30,7 @@ typedef struct structsectdirent {
 	DIRENT entry[ENTRIESPERBLOCK];
 } SECTDIRENT;
 
-#define BLOCKSIZE 0x100
+#define BLOCKSIZE 0x100UL
 #define DIRENTSIZE 32
 
 typedef struct structBAMentry {

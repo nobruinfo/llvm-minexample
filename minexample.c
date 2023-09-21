@@ -92,7 +92,7 @@ int main() {
   cputs(" ");
   cputhex(ATTICZPBACKUP & 0xffff, 4);
   cputln();
-  printf("ATTICZPBACKUP 32addr is: %08x", ATTICZPBACKUP);
+  printf("ATTICZPBACKUP 32addr is: %08lx", (unsigned long) ATTICZPBACKUP);
   cputln();
   cgetc();
 

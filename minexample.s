@@ -221,9 +221,8 @@ main:                                   ; @main
 	ldx	#128
 	stx	mos8(dmalist+1)
 	stz	mos8(dmalist+2)
-	inx
-	stx	mos8(dmalist+3)
-	ldx	#127
+	ldy	#129
+	sty	mos8(dmalist+3)
 	stx	mos8(dmalist+4)
 	ldx	#133
 	stx	mos8(dmalist+5)
@@ -241,8 +240,7 @@ main:                                   ; @main
 	stz	mos8(dmalist+14)
 	ldx	#215
 	stx	mos8(dmalist+15)
-	ldx	#15
-	stx	mos8(dmalist+16)
+	stz	mos8(dmalist+16)
 	ldx	#71
 	stx	53295
 	ldy	#83
@@ -478,10 +476,10 @@ main:                                   ; @main
 	ldy	#3
 	sty	__rc3
 	jsr	cputsxy
-	lda	#255
-	ldx	#7
+	ldx	#8
 	stz	__rc2
 	stz	__rc3
+	lda	#0
 	jsr	cputhex
 	lda	mos8(g_curX)
 	ldx	mos8(g_curY)
@@ -496,16 +494,15 @@ main:                                   ; @main
 	lda	#0
 	jsr	cputhex
 	jsr	cputln
-	lda	#0
-	sta	(__rc0)
 	ldy	#1
 	lda	#215
 	sta	(__rc0),y
+	lda	#0
+	sta	(__rc0)
 	iny
-	lda	#255
 	sta	(__rc0),y
 	iny
-	lda	#7
+	lda	#8
 	sta	(__rc0),y
 	jsr	printf
 	jsr	cputln
@@ -582,9 +579,8 @@ main:                                   ; @main
 	stx	mos8(dmalist)
 	ldx	#128
 	stx	mos8(dmalist+1)
-	ldx	#127
 	stx	mos8(dmalist+2)
-	ldx	#129
+	inx
 	stx	mos8(dmalist+3)
 	stz	mos8(dmalist+4)
 	ldx	#133
@@ -600,8 +596,7 @@ main:                                   ; @main
 	stz	mos8(dmalist+11)
 	ldx	#215
 	stx	mos8(dmalist+12)
-	ldx	#15
-	stx	mos8(dmalist+13)
+	stz	mos8(dmalist+13)
 	stz	mos8(dmalist+14)
 	stz	mos8(dmalist+15)
 	stz	mos8(dmalist+16)
@@ -8401,8 +8396,8 @@ memmove:                                ; @memmove
 
 	.type	.L.str.2,@object                ; @.str.2
 .L.str.2:
-	.asciz	"ATTICZPBACKUP 32addr is: %08x"
-	.size	.L.str.2, 30
+	.asciz	"ATTICZPBACKUP 32addr is: %08lx"
+	.size	.L.str.2, 31
 
 	.type	.L.str.3,@object                ; @.str.3
 .L.str.3:

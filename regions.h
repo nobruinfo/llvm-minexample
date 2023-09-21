@@ -18,7 +18,7 @@
 
 // visit the attic mega65-book.pdf#229
 
-#define ATTIC         0x8000000U
+#define ATTIC         0x8000000UL
 
 #define ATTICDIRENTBUFFER (ATTIC + 0)
 #define ATTICDIRENTSIZE (DIRENTBLOCKS * BLOCKSIZE)
@@ -43,6 +43,6 @@
 #define ATTICEND (ATTICZPBACKUP + ATTICZPBACKUPSIZE)
 
 // llvm does not evaluate this, error is not fired:
-#if (ATTICEND > 0x8001000)
+#if (ATTICEND > 0x8001000UL)
   #error attic RAM allocation exceeded!
 #endif

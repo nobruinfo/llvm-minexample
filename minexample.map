@@ -53,7 +53,7 @@
       39       39        0     1 __zp_bss_size = SIZEOF ( .zp.bss )
       39       39       38     1 .zp
       39       39       38     1         lto.tmp:(.zp.noinit..Lzp_stack)
-    2017     2017     1a3b     1 .text
+    2017     2017     1a31     1 .text
     2017     2017        0     1         _init = .
     2017     2017        0     1         _start = .
     2017     2017        e     1         F:\Entwicklungsprojekte\Mega65\llvm-mos\llvm-mos\bin/../mos-platform/mega65/lib\unmap-basic.o:(.init.010)
@@ -77,63 +77,63 @@
     2061     2061       13     1                 __zero_zp_bss
     2074     2074      138     1         lto.tmp:(.text.cputln)
     2074     2074      138     1                 cputln
-    21ac     21ac      317     1         lto.tmp:(.text.main)
-    21ac     21ac      317     1                 main
-    24c3     24c3        1     1         lto.tmp:(.text.escNOP)
-    24c3     24c3        1     1                 escNOP
-    24c4     24c4       5e     1         lto.tmp:(.text.cputhex)
-    24c4     24c4       5e     1                 cputhex
-    2522     2522       dd     1         lto.tmp:(.text.cputsxy)
-    2522     2522       dd     1                 cputsxy
-    25ff     25ff       8b     1         lto.tmp:(.text.lcopy)
-    25ff     25ff       8b     1                 lcopy
-    268a     268a       74     1         lto.tmp:(.text.lfill)
-    268a     268a       74     1                 lfill
-    26fe     26fe      b2c     1         lto.tmp:(.text.printf)
-    26fe     26fe      b2c     1                 printf
-    322a     322a      689     1         lto.tmp:(.text._ntoa)
-    322a     322a      689     1                 _ntoa
-    38b3     38b3       34     1         lto.tmp:(.text.strlen)
-    38b3     38b3       34     1                 strlen
-    38e7     38e7       13     1         lto.tmp:(.text.__ashlhi3)
-    38e7     38e7       13     1                 __ashlhi3
-    38fa     38fa       32     1         lto.tmp:(.text.__mulhi3)
-    38fa     38fa       32     1                 __mulhi3
-    392c     392c       da     1         lto.tmp:(.text.__udivmodhi4)
-    392c     392c       da     1                 __udivmodhi4
-    3a06     3a06       2d     1         lto.tmp:(.text.memcpy)
-    3a06     3a06       2d     1                 memcpy
-    3a33     3a33       1f     1         lto.tmp:(.text.__memset)
-    3a33     3a33       1f     1                 __memset
-    3a52     3a52        0     1         __init_array_start = .
-    3a52     3a52        0     1         __init_array_end = .
-    3a52     3a52        0     1         __fini_array_start = .
-    3a52     3a52        0     1         __fini_array_end = .
-    3a52     3a52       9f     1 .rodata
-    3a52     3a52        1     1         F:\Entwicklungsprojekte\Mega65\llvm-mos\llvm-mos\bin/../mos-platform/common/lib\libcrt.a(const.S.obj):(.rodata)
-    3a52     3a52        0     1                 __set_v
-    3a53     3a53       3c     1         lto.tmp:(.rodata.printf)
-    3a8f     3a8f       4d     1         <internal>:(.rodata.str1.1)
-    3adc     3adc        5     1         lto.tmp:(.rodata..Lswitch.table.asciitoscreencode_s)
-    3ae1     3ae1       10     1         <internal>:(.rodata.cst16)
-    3af1     3af1        0     1 .data
-    3af1     3af1        0     1         __data_start = .
-    3af1     3af1        0     1         __data_end = .
-    3af1     3af1        0     1 __data_load_start = LOADADDR ( .data )
-    3af1     3af1        0     1 __data_size = SIZEOF ( .data )
-    3af1     3af1      2fe     1 .bss
-    3af1     3af1        0     1         __bss_start = .
-    3af1     3af1        1     1         lto.tmp:(.bss.g_curScreenH)
-    3af1     3af1        1     1                 g_curScreenH
-    3af2     3af2      2fd     1         lto.tmp:(.bss.escapeCode)
-    3af2     3af2      2fd     1                 escapeCode
-    3def     3def        0     1         __bss_end = .
-    3def     3def        0     1 __bss_size = SIZEOF ( .bss )
-    3def     3def      1ff     1 .noinit
-    3def     3def        1     1         F:\Entwicklungsprojekte\Mega65\llvm-mos\llvm-mos\bin/../mos-platform/commodore/lib\libcrt0.a(exit-return.c.obj):(.noinit)
-    3df0     3df0      1fe     1         lto.tmp:(.noinit..Lstatic_stack)
-    3fee     3fee        0     1         __heap_start = .
-    3fee     3fee        0     1 __stack = 0xd000
+    21ac     21ac      30d     1         lto.tmp:(.text.main)
+    21ac     21ac      30d     1                 main
+    24b9     24b9        1     1         lto.tmp:(.text.escNOP)
+    24b9     24b9        1     1                 escNOP
+    24ba     24ba       5e     1         lto.tmp:(.text.cputhex)
+    24ba     24ba       5e     1                 cputhex
+    2518     2518       dd     1         lto.tmp:(.text.cputsxy)
+    2518     2518       dd     1                 cputsxy
+    25f5     25f5       8b     1         lto.tmp:(.text.lcopy)
+    25f5     25f5       8b     1                 lcopy
+    2680     2680       74     1         lto.tmp:(.text.lfill)
+    2680     2680       74     1                 lfill
+    26f4     26f4      b2c     1         lto.tmp:(.text.printf)
+    26f4     26f4      b2c     1                 printf
+    3220     3220      689     1         lto.tmp:(.text._ntoa)
+    3220     3220      689     1                 _ntoa
+    38a9     38a9       34     1         lto.tmp:(.text.strlen)
+    38a9     38a9       34     1                 strlen
+    38dd     38dd       13     1         lto.tmp:(.text.__ashlhi3)
+    38dd     38dd       13     1                 __ashlhi3
+    38f0     38f0       32     1         lto.tmp:(.text.__mulhi3)
+    38f0     38f0       32     1                 __mulhi3
+    3922     3922       da     1         lto.tmp:(.text.__udivmodhi4)
+    3922     3922       da     1                 __udivmodhi4
+    39fc     39fc       2d     1         lto.tmp:(.text.memcpy)
+    39fc     39fc       2d     1                 memcpy
+    3a29     3a29       1f     1         lto.tmp:(.text.__memset)
+    3a29     3a29       1f     1                 __memset
+    3a48     3a48        0     1         __init_array_start = .
+    3a48     3a48        0     1         __init_array_end = .
+    3a48     3a48        0     1         __fini_array_start = .
+    3a48     3a48        0     1         __fini_array_end = .
+    3a48     3a48       a0     1 .rodata
+    3a48     3a48        1     1         F:\Entwicklungsprojekte\Mega65\llvm-mos\llvm-mos\bin/../mos-platform/common/lib\libcrt.a(const.S.obj):(.rodata)
+    3a48     3a48        0     1                 __set_v
+    3a49     3a49       3c     1         lto.tmp:(.rodata.printf)
+    3a85     3a85       4e     1         <internal>:(.rodata.str1.1)
+    3ad3     3ad3        5     1         lto.tmp:(.rodata..Lswitch.table.asciitoscreencode_s)
+    3ad8     3ad8       10     1         <internal>:(.rodata.cst16)
+    3ae8     3ae8        0     1 .data
+    3ae8     3ae8        0     1         __data_start = .
+    3ae8     3ae8        0     1         __data_end = .
+    3ae8     3ae8        0     1 __data_load_start = LOADADDR ( .data )
+    3ae8     3ae8        0     1 __data_size = SIZEOF ( .data )
+    3ae8     3ae8      2fe     1 .bss
+    3ae8     3ae8        0     1         __bss_start = .
+    3ae8     3ae8        1     1         lto.tmp:(.bss.g_curScreenH)
+    3ae8     3ae8        1     1                 g_curScreenH
+    3ae9     3ae9      2fd     1         lto.tmp:(.bss.escapeCode)
+    3ae9     3ae9      2fd     1                 escapeCode
+    3de6     3de6        0     1         __bss_end = .
+    3de6     3de6        0     1 __bss_size = SIZEOF ( .bss )
+    3de6     3de6      1ff     1 .noinit
+    3de6     3de6        1     1         F:\Entwicklungsprojekte\Mega65\llvm-mos\llvm-mos\bin/../mos-platform/commodore/lib\libcrt0.a(exit-return.c.obj):(.noinit)
+    3de7     3de7      1fe     1         lto.tmp:(.noinit..Lstatic_stack)
+    3fe5     3fe5        0     1         __heap_start = .
+    3fe5     3fe5        0     1 __stack = 0xd000
        0        0       79     1 .comment
        0        0       79     1         <internal>:(.comment)
        0        0      b00     4 .symtab
